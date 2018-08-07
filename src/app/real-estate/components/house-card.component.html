@@ -1,0 +1,9 @@
+<mat-card class="house-card">
+  <mat-card-title data-test-house-title>{{house.title}}</mat-card-title>
+  <img mat-card-image src="{{house.image}}">
+  <mat-card-content>
+    <p>Price ${{house.price | number:'1.2-2'}}</p>
+    <p>{{house.onSale ? 'On sale' : 'Not on sale'}}!</p>
+    <p>{{house.description}}</p>
+  </mat-card-content>
+</mat-card>
